@@ -6,11 +6,10 @@ interface DescriptionCardProps {
     info: string;
     query: string | ReactNode;
     id: number;
+    setModalVisible: (e: boolean) => void;
 }
 
-const DescriptionItem: FC<DescriptionCardProps> = ({ikonSrc, info, query}) => {
-
-    
+const DescriptionItem: FC<DescriptionCardProps> = ({ikonSrc, info, query, setModalVisible}) => {
     return (
         <li className={classes.description__item}>
             <div className={classes.description__ikon}>
@@ -20,7 +19,7 @@ const DescriptionItem: FC<DescriptionCardProps> = ({ikonSrc, info, query}) => {
                 <p className={classes.description__query}>{query}</p>
             </div>
             <p className={classes.description__info}>{info}</p>
-            <button className={classes.description__button}><span className='visually-hidden'>Открыть</span></button>
+            <button onClick={()=>setModalVisible(true)} className={classes.description__button}><span className='visually-hidden'>Открыть</span></button>
         </li>
     );
 };

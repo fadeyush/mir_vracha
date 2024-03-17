@@ -1,19 +1,25 @@
-import React, { FC, ReactNode } from 'react';
+'use client';
+import React, { FC, ReactNode, useState } from 'react';
 import classes from './Description.module.scss';
 import DescriptionItem from '../descriptionItem/DescriptionItem';
+import MyModal from '@/UI/MyModal/MyModal';
+import Statistic from '../statistic/Statistic';
 
 interface DescriptionCardProps {
     ikonSrc: string;
     info: string;
     query: string | ReactNode;
     id: number;
+    setModalVisible: (e: boolean) => void;
 }
 
 const Description: FC = () => {
+    const [modalStatistic, setModalStatistic] = useState<boolean>(false);
+    const [modalDanger, setModalDanger] = useState<boolean>(false);
 
     const descriptionArr: DescriptionCardProps[] = [
-        {id: 1, info: 'В десятилетнем исследовании «Генетическая эпидемиология ХОБЛ» (COPDGene) среди пациентов с ХОБЛ, диагностированной до 55 лет, было выявлено преобладание...', query: <>ХОБЛ <b>болеют преимущественно мужчины?</b></>, ikonSrc: '/images/ikons/user.svg'},
-        {id: 2, info: 'Большинство пациентов с ХОБЛ столкнется с обострениями: как минимум одно среднетяжелое или тяжелое обострение случится в течение...', query: <><b>Опасно</b> не наличие заболевания, а обострения?</>, ikonSrc: '/images/ikons/stat.svg'}
+        {id: 1, info: 'В десятилетнем исследовании «Генетическая эпидемиология ХОБЛ» (COPDGene) среди пациентов с ХОБЛ, диагностированной до 55 лет, было выявлено преобладание...', query: <>ХОБЛ <b>болеют преимущественно мужчины?</b></>, ikonSrc: '/images/ikons/user.svg', setModalVisible: setModalStatistic},
+        {id: 2, info: 'Большинство пациентов с ХОБЛ столкнется с обострениями: как минимум одно среднетяжелое или тяжелое обострение случится в течение...', query: <><b>Опасно</b> не наличие заболевания, а обострения?</>, ikonSrc: '/images/ikons/stat.svg', setModalVisible: setModalDanger}
     ];
 
     return (
@@ -21,9 +27,11 @@ const Description: FC = () => {
             <h2 className={classes.description__title}>ХОБЛ: мифы и реальность</h2>
             <ul className={classes.description__list}>
                 {descriptionArr.map(description => 
-                    <DescriptionItem key={description.id} ikonSrc={description.ikonSrc} info={description.info} id={description.id} query={description.query}/>
+                    <DescriptionItem setModalVisible={description.setModalVisible} key={description.id} ikonSrc={description.ikonSrc} info={description.info} id={description.id} query={description.query}/>
                 )}
             </ul>
+            <MyModal visible={modalStatistic} setVisible={setModalStatistic}><Statistic/></MyModal>
+            <MyModal visible={modalDanger} setVisible={setModalDanger}>modalDanger</MyModal>
         </section>
     );
 };

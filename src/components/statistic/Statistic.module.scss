@@ -1,0 +1,9 @@
+@import '../../app/variables.scss';
+
+.statistic__wrapper {
+    margin-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
