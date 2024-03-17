@@ -1,0 +1,78 @@
+@import '../../app/variables.scss';
+
+.description__item {
+    display: flex;
+    gap: 29px;
+
+    width: 1290px;
+    
+    padding: 40px 29px 40px 38px;
+    border-radius: 20px;   
+    border: 1px solid $mainTextColor;
+
+    box-shadow: $boxShadow;
+    &:nth-child(2n) .description__button::after {
+        background-color: $backgroundColorGradientGreen;
+    }
+}
+
+.description__button {
+    border: none;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        top: -64px;
+        right: -55px;
+        width: 48px;
+        height: 48px;
+        background-color: $mainTextColor;
+        border-radius: 50%;
+        background-image: url('../../../public/images/ikons/hand.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+   
+}
+
+.description__ikon {
+    width: 80px;
+    height: 80px;
+    border-radius: 0 1000px 1000px 1000px;
+    background: $backgroundGradientGreen;
+    padding: 18px 0 0 18px;
+}
+
+.description__queryWrapper {
+    width: 295px;
+    height: 115px;
+    -webkit-clip-path: polygon(calc(100% - 40px) 0, 100% 45%, calc(100% - 40px) 100%, 0 100%, 0 0);
+    clip-path: polygon(calc(100% - 40px) 0, 100% 45%, calc(100% - 40px) 100%, 0 100%, 0 0);
+    background: linear-gradient(265.25deg, #01457a, #43a7c7 43.23%, #bcd77e 74.48%, hsla(78, 53%, 67%, 0));
+}
+
+.description__query {
+    width: 291px;
+    height: 111px;
+    -webkit-clip-path: polygon(calc(100% - 41px) 0, 100% 47%, calc(100% - 39px) 101%, 0 100%, 0 0);
+    clip-path: polygon(calc(100% - 41px) 0, 100% 47%, calc(100% - 39px) 101%, 0 100%, 0 0);
+    background: $backgroundGradientBlue;
+    padding-top: 6px;
+}
+
+.description__info {
+    width: 755px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        bottom: 15px;
+        width: 755px;
+        height: 50px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    }
+}

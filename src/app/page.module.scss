@@ -1,0 +1,10 @@
+@import './variables.scss';
+
+.main {
+    max-width: 1380px;
+    margin: 0 auto;
+
+    box-shadow: $boxShadow;
+
+    background-color: white;
+}

@@ -1,0 +1,19 @@
+@import '../../app/variables.scss';
+
+.description {
+    background-image: url('../../../public/images/ikons/header-bg.svg');
+    background-repeat: no-repeat;
+    padding: 27px 45px 10px ;
+}
+
+.description__title {
+    margin-bottom: 93px;
+    font-size: $fontSizeTitle;
+}
+
+.description__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
