@@ -1,0 +1,35 @@
+@import '../../app/variables.scss';
+
+.dangerStatistics__item {
+    background-color: $backgroundStatistics;
+    border-radius: 20px;
+
+    width: 367px;
+    height: 468px;
+
+    padding: 30px 0;
+
+    text-align: center;
+}
+
+.dangerStatisticsItem__ikonContent {
+    display: block;
+    margin: 0 auto;
+}
+
+.dangerStatisticsItem__percent {
+    font-size: 96px;
+    line-height: 131px;
+    margin-bottom: 15px;
+}
+
+.dangerStatisticsItem__info {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.dangerStatisticsItem__source {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px;
+}

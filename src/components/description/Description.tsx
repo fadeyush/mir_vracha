@@ -4,6 +4,7 @@ import classes from './Description.module.scss';
 import DescriptionItem from '../descriptionItem/DescriptionItem';
 import MyModal from '@/UI/MyModal/MyModal';
 import Statistic from '../statistic/Statistic';
+import DangerStatistics from '../dangerStatistics/DangerStatistics';
 
 interface DescriptionCardProps {
     ikonSrc: string;
@@ -31,7 +32,7 @@ const Description: FC = () => {
                 )}
             </ul>
             <MyModal visible={modalStatistic} setVisible={setModalStatistic}><Statistic/></MyModal>
-            <MyModal visible={modalDanger} setVisible={setModalDanger}>modalDanger</MyModal>
+            <MyModal visible={modalDanger} setVisible={setModalDanger}><DangerStatistics/></MyModal>
         </section>
     );
 };
