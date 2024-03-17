@@ -8,3 +8,42 @@
     font-weight: normal;
     font-style: normal;
 }
+
+$mainTextColor: #01457A;
+$fontFamilyHeaders: "Century Gothic", sans-serif;
+
+$fontSizeMainContent: 24px;
+$fontSizeHeaders: 28px;
+$fontSizeTitle: 40px;
+
+$colorWhite: #FFFFFF;
+$backgroundColorGradientWhite: #FBFDFF;
+$backgroundColorGradientBlue: #D8EFFF;
+$backgroundColorGradientYellow: #FDD966;
+$backgroundColorGradientGreen: #BCD77E;
+$boxShadowColor:#8EA0AD59;
+
+$backgroundMainGradient: linear-gradient(180deg, $colorWhite 35.7%, $backgroundColorGradientBlue 100%);
+$backgroundGradientBlue: linear-gradient(270deg, $backgroundColorGradientBlue 0%, $colorWhite 100%);
+$backgroundCardsGradientBlue: linear-gradient(90deg, $backgroundColorGradientWhite 0%, $backgroundColorGradientBlue 100.86%);
+$backgroundGradientGreen: linear-gradient(90deg, $backgroundColorGradientYellow 0%, $backgroundColorGradientGreen 68.54%);
+$backgroundStatistics: rgba($backgroundColorGradientYellow, 0.25);
+
+$boxShadow: 0px 0px 25px 0px $boxShadowColor;
+
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden,
+input[type="file"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

@@ -7,3 +7,19 @@
     margin: 0;
     padding: 0;
 }
+
+body,html {
+    height: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    color: $mainTextColor;
+    font-weight: 400;
+    font-size: $fontSizeMainContent;
+    line-height: 33px;
+
+    background: $backgroundMainGradient;
+    background-repeat: no-repeat;
+}
