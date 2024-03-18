@@ -15,7 +15,7 @@
 }
 
 .FocusSection__header {
-    width: 1290px;
+    max-width: 1290px;
     height: 83px;
     padding: 10px;
     border-radius: 20px;
@@ -28,4 +28,5 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 40px;
+    text-align: center;
 }

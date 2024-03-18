@@ -18,14 +18,16 @@ const DirectionsSrategy: FC = () => {
         <div className={classes.DirectionsSrategy__wrapper}>
             <h3 className={classes.DirectionsSrategy__title}>Приоритетные направления фармакотерапевтической стратегии при ХОБЛ<sup>1</sup>:</h3>
             <div className={classes.DirectionsSrategy__listWrapper}>
-                <ul className={classes.DirectionsSrategy__list}>
-                    {directionsArr.map(direction =>
-                        <FocusItem key={direction.id} id={direction.id} info={direction.info} header={direction.header} isFullCard={direction.isFullCard}/>    
-                    )}
-                </ul>
-                <div  className={classes.DirectionsSrategy__arrowWrapper}>
-                    <hr className={classes.DirectionsSrategy__arrow}></hr>
-                    <hr className={classes.DirectionsSrategy__arrow}></hr>
+                <div className={classes.DirectionsSrategy__listFirstWtapper}>
+                    <ul className={classes.DirectionsSrategy__list}>
+                        {directionsArr.map(direction =>
+                            <FocusItem key={direction.id} id={direction.id} info={direction.info} header={direction.header} isFullCard={direction.isFullCard}/>    
+                        )}
+                    </ul>
+                    <div  className={classes.DirectionsSrategy__arrowWrapper}>
+                        <hr className={classes.DirectionsSrategy__arrow}></hr>
+                        <hr className={classes.DirectionsSrategy__arrow}></hr>
+                    </div>
                 </div>
                 <ul className={classes.DirectionsSrategy__list}>
                     {recommendationsArr.map(recommendation =>

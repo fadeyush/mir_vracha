@@ -19,7 +19,7 @@
 
 .recommendations__item {
     width: 630px;
-    height: 400px;
+    min-height: 400px;
     padding: 30px 40px;
     text-align: start;
 }
@@ -66,5 +66,37 @@
         align-items: center;
         justify-content: center;
         z-index: 111;
+    }
+}
+
+@media (max-width: 1425px) {
+    .directions__item {
+        height: auto;
+    }
+    
+    .focusItem__title {
+        font-size: 24px;
+    }
+    .focusItem__info {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1245px) {
+    .focusItem__title {
+        font-size: 20px;
+    }
+    .focusItem__info {
+        font-size: 18px;
+        line-height: 27px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .directions__item {   
+        .focusItem__info {
+            font-size: 16px;
+        }
     }
 }
