@@ -1,0 +1,31 @@
+@import '../../app/variables.scss';
+
+.FocusSection {
+    margin-top: 100px;
+    background-image: url('../../../public/images/ikons/header-bg.svg');
+    background-repeat: no-repeat;
+    padding: 18px 45px 0;
+}
+
+.FocusSection__title {
+    font-size: $fontSizeTitle;
+    line-height: 50px;
+    margin-bottom: 83px;
+    font-family: $fontFamilyHeaders;
+}
+
+.FocusSection__header {
+    width: 1290px;
+    height: 83px;
+    padding: 10px;
+    border-radius: 20px;
+    background: $backgroundGradientGreen;
+
+    font-size: 28px;
+    line-height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}

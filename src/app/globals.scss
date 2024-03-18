@@ -23,6 +23,11 @@ body {
     padding-top: 141px;
     padding-bottom: 117px;
 
-    background: $backgroundMainGradient;
+    background: url('../../public/images/ikons/layout-bg.svg') 0 0, $backgroundMainGradient;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+sup {
+    font-size: 18px;
 }

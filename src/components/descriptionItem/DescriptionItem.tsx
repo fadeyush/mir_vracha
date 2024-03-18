@@ -1,13 +1,6 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import classes from './DescriptionItem.module.scss';
-
-interface DescriptionCardProps {
-    ikonSrc: string;
-    info: string;
-    query: string | ReactNode;
-    id: number;
-    setModalVisible: (e: boolean) => void;
-}
+import { DescriptionCardProps } from '@/types/descriptionCard';
 
 const DescriptionItem: FC<DescriptionCardProps> = ({ikonSrc, info, query, setModalVisible}) => {
     return (

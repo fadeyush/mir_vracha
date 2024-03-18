@@ -1,18 +1,11 @@
 'use client';
-import React, { FC, ReactNode, useState } from 'react';
+import React, { FC, useState } from 'react';
 import classes from './Description.module.scss';
 import DescriptionItem from '../descriptionItem/DescriptionItem';
 import MyModal from '@/UI/MyModal/MyModal';
 import Statistic from '../statistic/Statistic';
 import DangerStatistics from '../dangerStatistics/DangerStatistics';
-
-interface DescriptionCardProps {
-    ikonSrc: string;
-    info: string;
-    query: string | ReactNode;
-    id: number;
-    setModalVisible: (e: boolean) => void;
-}
+import { DescriptionCardProps } from '@/types/descriptionCard';
 
 const Description: FC = () => {
     const [modalStatistic, setModalStatistic] = useState<boolean>(false);

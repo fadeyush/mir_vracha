@@ -1,13 +1,6 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import classes from './DangerStatisticsItem.module.scss';
-
-interface DangerStatisticsProps {
-    id: number;
-    ikonSrc: string;
-    percent: string;
-    info: string | ReactNode;
-    source: string | ReactNode;
-}
+import { DangerStatisticsProps } from '@/types/dangerStatistics';
 
 const DangerStatisticsItem: FC<DangerStatisticsProps> = ({ikonSrc, percent, info, source}) => {
     return (

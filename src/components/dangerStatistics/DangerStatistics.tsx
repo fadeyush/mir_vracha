@@ -1,14 +1,7 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import classes from './DangerStatistics.module.scss';
 import DangerStatisticsItem from '../DangerStatisticsItem/DangerStatisticsItem';
-
-interface DangerStatisticsProps {
-    id: number;
-    ikonSrc: string;
-    percent: string;
-    info: string | ReactNode;
-    source: string | ReactNode;
-}
+import { DangerStatisticsProps } from '@/types/dangerStatistics';
 
 const DangerStatistics: FC = () => {
 
@@ -26,7 +19,7 @@ const DangerStatistics: FC = () => {
             <h3 className={classes.dangerStatistics__title}>Пятилетняя выживаемость пациентов</h3>
             <ul className={classes.dangerStatistics__list}>
                 {survivalArr.map(survival=>
-                    <DangerStatisticsItem id={survival.id} percent={survival.percent} ikonSrc={survival.ikonSrc} source={survival.source} info={survival.info}/>
+                    <DangerStatisticsItem key={survival.id} id={survival.id} percent={survival.percent} ikonSrc={survival.ikonSrc} source={survival.source} info={survival.info}/>
                 )}
             </ul>
         </section>
