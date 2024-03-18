@@ -11,10 +11,43 @@
     display: flex;
     flex-direction: column;
     gap: 80px;
+    position: relative;
 }
 
 .DirectionsSrategy__list {
     list-style: none;
     display: flex;
     gap: 30px;
+}
+
+.DirectionsSrategy__arrowWrapper {
+    display: flex;
+    position: absolute;
+    top: 605px;
+    left: 227px;
+    width: 100%;
+}
+
+.DirectionsSrategy__arrow {
+    margin: 4px 15px 40px;
+    width: 30%;
+    position: relative;
+    height: 40px;
+    border-top: none;
+    border-bottom: 2px solid $mainTextColor;
+    border-left: 2px solid $mainTextColor;
+    border-right: 2px solid $mainTextColor;
+    position: relative;
+    overflow: visible;
+
+    &::after {
+        position: absolute;
+        content: '';
+        bottom: -27px;
+        left: calc(50% - 15px);
+
+        width: 30px;
+        height: 27px;
+        background: url('../../../public/images/ikons/arrow-down.svg') no-repeat;
+    }
 }

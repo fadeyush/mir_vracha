@@ -23,6 +23,10 @@ const DirectionsSrategy: FC = () => {
                         <FocusItem key={direction.id} id={direction.id} info={direction.info} header={direction.header} isFullCard={direction.isFullCard}/>    
                     )}
                 </ul>
+                <div  className={classes.DirectionsSrategy__arrowWrapper}>
+                    <hr className={classes.DirectionsSrategy__arrow}></hr>
+                    <hr className={classes.DirectionsSrategy__arrow}></hr>
+                </div>
                 <ul className={classes.DirectionsSrategy__list}>
                     {recommendationsArr.map(recommendation =>
                         <FocusItem  key={recommendation.id} id={recommendation.id} info={recommendation.info} isFullCard={recommendation.isFullCard}/>    
