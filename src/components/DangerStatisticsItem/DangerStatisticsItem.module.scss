@@ -33,3 +33,51 @@
     font-weight: 300;
     line-height: 25px;
 }
+
+@media (max-width: 1025px) {
+    .dangerStatistics__item {
+        width: 270px;
+        min-height: auto;
+    }
+    .dangerStatisticsItem__ikonContent {
+        width: 70px;
+        height: 100px;
+    }
+
+    .dangerStatisticsItem__percent {
+        font-size: 70px;
+        line-height: 110px;
+        margin-bottom: 0;
+    }
+
+    .dangerStatisticsItem__info {
+        font-size: 22px;
+        min-height: 89px;
+        line-height: 30px;
+    }
+    .dangerStatisticsItem__source {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .dangerStatistics__item {
+        width: 200px;
+    }
+    .dangerStatisticsItem__ikonContent {
+        width: 65px;
+        height: 86px;
+    }
+
+    .dangerStatisticsItem__percent {
+        font-size: 60px;
+        line-height: 100px;
+    }
+
+    .dangerStatisticsItem__info {
+        font-size: 18px;
+        min-height: 79px;
+        line-height: 25px;
+    }
+}

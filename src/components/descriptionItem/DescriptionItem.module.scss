@@ -12,29 +12,28 @@
     border: 1px solid $mainTextColor;
 
     box-shadow: $boxShadow;
-    &:nth-child(2n) .description__button::after {
+    &:nth-child(2n) .description__button {
         background-color: $backgroundColorGradientGreen;
     }
+
+    position: relative;
 }
 
 .description__button {
     border: none;
-    position: relative;
 
-    &::after {
-        position: absolute;
-        content: '';
-        top: -64px;
-        right: -55px;
-        width: 48px;
-        height: 48px;
-        background-color: $mainTextColor;
-        border-radius: 50%;
-        background-image: url('../../../public/images/ikons/hand.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        cursor: pointer;
-    }   
+    position: absolute;
+    content: '';
+    top: -25px;
+    right: -20px;
+    width: 48px;
+    height: 48px;
+    background-color: $mainTextColor;
+    border-radius: 50%;
+    background-image: url('../../../public/images/ikons/hand.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .description__ikon {
@@ -61,6 +60,8 @@
     clip-path: polygon(calc(100% - 41px) 0, 100% 47%, calc(100% - 39px) 101%, 0 100%, 0 0);
     background: $backgroundGradientBlue;
     padding-top: 6px;
+    margin-bottom: 3px;
+    margin-right: 3px;
 }
 
 .description__info {
@@ -84,8 +85,27 @@
     overflow: hidden;
 }
 
-@media (max-width: 1425px) {
-    .description__query {
-        clip-path: polygon(calc(100% - 44px) 0, 99% 47%, calc(100% - 42px) 101%, 0 100%, 0 0);
+
+@media (max-width: 1025px) {
+    .description__item {
+        flex-wrap: wrap;
     }
+
+    .description__queryWrapper {
+        width: auto;
+        max-width: calc(100% - 140px);
+        
+        height: auto;
+        min-height: 95px;
+    }
+
+    .description__query {
+        width: auto;
+        padding-right: 50px;
+        height: auto;
+        min-height: 92px;
+    }
+}
+
+@media (max-width: 600px) {
 }

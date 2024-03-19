@@ -73,3 +73,15 @@
          left: 16.5%;
     }
 }
+
+@media (max-width: 1025px) {
+    .DirectionsSrategy__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 780px) {
+    .description__title {
+        font-size: 18px;
+    }
+}

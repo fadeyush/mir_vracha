@@ -18,3 +18,25 @@
     justify-content: space-between;
     list-style: none;
 }
+
+@media (max-width: 1025px) {
+    .dangerStatistics__wrapper {
+        font-size: 21px;
+        margin-bottom: 30px;
+    }
+
+    .dangerStatistics__title {
+       font-size: 25px;
+       margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .dangerStatistics__wrapper {
+        font-size: 18px;
+    }
+
+    .dangerStatistics__title {
+       font-size: 21px;
+    }
+}

@@ -18,3 +18,16 @@
     gap: 40px;
     align-items: center;
 }
+
+@media (max-width: 1025px) {
+    .description__title {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 780px) {
+    .description__title {
+        font-size: 35px;
+        margin-bottom: 74px;
+    }
+}
