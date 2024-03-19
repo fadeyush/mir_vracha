@@ -15,8 +15,9 @@
     &:nth-child(2n) .description__button {
         background-color: $backgroundColorGradientGreen;
     }
-
     position: relative;
+
+    background-color: white;
 }
 
 .description__button {

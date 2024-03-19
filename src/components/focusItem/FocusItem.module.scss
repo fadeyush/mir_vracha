@@ -193,3 +193,48 @@
         line-height: 33px;
     }
 }
+
+@media (max-width: 610px) {
+    .focusItem {
+        padding: 18px 12px;
+        min-height: auto;
+    }
+    
+    .focusItem__title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .focusItem__info {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    
+    .focusItem__ikon {
+        width: 140px;
+        height: 113px;
+    
+        &::after {
+            width: 103px;
+            height: 98px;
+        }
+        
+        .focusItem__id {
+            width: 60px;
+            height: 60px;
+            font-size: 38px;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .focusItem__title {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .focusItem__info {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
