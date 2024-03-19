@@ -81,7 +81,21 @@
 }
 
 @media (max-width: 780px) {
-    .description__title {
+    .DirectionsSrategy__title {
         font-size: 18px;
+    }
+    
+    .DirectionsSrategy__listWrapper {
+        margin-top: 40px;
+        gap: 60px;
+    }
+    
+    .DirectionsSrategy__list {
+        gap: 30px;
+        flex-direction: column;
+    }
+    
+    .DirectionsSrategy__arrowWrapper {
+        display: none;
     }
 }
