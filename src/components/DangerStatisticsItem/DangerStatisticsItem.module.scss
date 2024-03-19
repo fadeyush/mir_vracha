@@ -81,3 +81,19 @@
         line-height: 25px;
     }
 }
+
+@media (max-width: 680px) {
+    .dangerStatistics__item {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .dangerStatisticsItem__ikonContent {
+        width: 48px;
+    }
+
+    .dangerStatisticsItem__percent {
+        font-size: 53px;
+        line-height: 80px;
+    }
+}

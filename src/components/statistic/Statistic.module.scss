@@ -16,6 +16,13 @@
 @media (max-width: 1025px) {
     .statistic__wrapper {
         font-size: 20px;
-        list-style: 30px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .statistic__wrapper {
+        font-size:  15px;
+        line-height: 18px;
     }
 }

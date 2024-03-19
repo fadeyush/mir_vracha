@@ -40,3 +40,19 @@
        font-size: 21px;
     }
 }
+
+@media (max-width: 680px) {
+    .dangerStatistics__wrapper {
+        font-size:  15px;
+        line-height: 18px;
+    }
+
+    .dangerStatistics__title {
+        font-size:  18px;
+        line-height: 18px;
+    }
+
+    .dangerStatistics__list {
+        flex-direction: column;
+    }
+}
