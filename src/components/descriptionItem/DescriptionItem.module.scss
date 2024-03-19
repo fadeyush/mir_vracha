@@ -85,7 +85,6 @@
     overflow: hidden;
 }
 
-
 @media (max-width: 1025px) {
     .description__item {
         flex-wrap: wrap;
@@ -108,4 +107,45 @@
 }
 
 @media (max-width: 600px) {
+    .description__item {
+        gap: 15px;
+        padding: 26px 0px 26px 20px;
+    }
+
+    .description__ikon {
+        width: 65px;
+        height: 65px;
+        padding: 12px 0 0 12px;
+    }
+
+    .description__query {
+        min-height: 75px;
+    }
+    
+    .description__queryWrapper {
+        font-size: 16px;
+        line-height: 19px;
+        min-width: 170px;
+        min-height: 75px;
+    }
+    
+    .description__info {
+        font-size: 16px;
+        line-height: 19px;
+    } 
+}
+
+@media (max-width: 420px) {
+    .description__item {
+        padding: 17px 0px 17px 9px;
+    }
+
+    .description__button {
+        top: -17px;
+        right: -15px;
+        width: 35px;
+        height: 35px;
+
+        background-size: 57%;
+    }
 }

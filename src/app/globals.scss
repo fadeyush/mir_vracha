@@ -42,3 +42,15 @@ sup {
         line-height: 0;
     }
 }
+
+@media (max-width: 680px) {
+    body {
+        padding-top: 55px;
+    }
+}
+
+@media (max-width: 430px) {
+    body {
+        padding-top: 35px;
+    }
+}
